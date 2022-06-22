@@ -15,11 +15,11 @@ public class ConverterController {
 
     @RequestMapping("/kilo")
     public String kilo(@RequestParam double st){
-        return String.format("%d Stone/s sind %d Kilo/s",st,conv.kilo(st));
+        return String.format("%f Stone/s sind %f Kilo/s",st,conv.kilo(st));
     }
 
     @RequestMapping("/gram")
     public String gram(@RequestParam double ou){
-        return String.format("%d Ounce/s sind %d Gramm",ou,conv.gram(ou));
+        return String.format("%f Ounce/s sind %f Gramm",ou,conv.gram(ou));
     }
 }
