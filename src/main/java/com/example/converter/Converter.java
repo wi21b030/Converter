@@ -12,7 +12,7 @@ public class Converter {
         return st * stTokg;
     }
 
-    public Object gram(double ou) {
+    public double gram(double ou) {
         return ou * ouTogr;
     }
 }
